@@ -389,7 +389,7 @@
 			segLight("x"+(parseInt(hours%12)+1)+"p");
 			var minsTo = 60 - parseInt(mins);
 			segLight("x"+minsTo.toString()+"1");
-			if (mins > 20){
+			if (minsTo > 20){
 				segLight("x201");
 				segLight("x"+(parseInt(minsTo)-20).toString()+"2");
 			}			
