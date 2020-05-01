@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		body {
+			background-color: lightblue;
+			font-family: courier;
+		}
+		.game {
+			background-color: white;
+			border-style: double;
+			padding: 10px;
+			width: 700px;
+			margin: auto;
+			text-align: center;
+		}
+		
+		.board{
+			text-align: center;
+		}
+		
+		.title{
+			text-align: center;
+		}
+		
+		.grid{
+			display:grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+			border-style: solid;
+		}
+		
+		.grid div:nth-child(even){
+		}
+		.grid div:nth-child(odd){
+		}
+		
+		#x00{
+			background-color: lightblue;
+		}
+		
+	</style>
+	<title>Tuna Clock</title>
+</head>
+
+<body>
+	<div class="game">
+	<h1>TUNA CLOCK</h1>
+
+	<div class="grid">
+		<div class="IT">I</div>
+		<div class="IT">T</div>
+		
+		<div>?</div>
+		
+		<div class="IS"> I</div>
+		<div class="IS">S</div>
+		
+		<div>?</div>
+		<div>?</div>
+		
+		<div class="x131">T</div>
+		<div class="x131">H</div>
+		<div class="x131">I</div>
+		<div class="x131">R</div>
+		<div class="x131">T</div>
+		<div class="x131">E</div>
+		<div class="x131">E</div>
+		<div class="x131">N</div>
+		
+		<div class="x11">O</div>
+		<div class="x11">N</div>
+		<div class="x11">E</div>
+		
+		<div class="x21">T</div>
+		<div class="x21">W</div>
+		<div class="x21">O</div>
+		
+		<div class="x31">T</div>
+		<div class="x31">H</div>
+		<div class="x31">R</div>
+		<div class="x31">E</div>
+		<div class="x31">E</div>
+		
+		<div class="x51">F</div>
+		<div class="x51">I</div>
+		<div class="x51">V</div>
+		<div class="x51">E</div>
+		
+		<div class="x41 x141">F</div>
+		<div class="x41 x141">O</div>
+		<div class="x41 x141">U</div>
+		<div class="x41 x141">R</div>
+		<div class="x141">T</div>
+		<div class="x141">E</div>
+		<div class="x141">E</div>
+		<div class="x141">N</div>
+		
+		<div class="xq">Q</div>
+		<div class="xq">U</div>
+		<div class="xq">A</div>
+		<div class="xq">R</div>
+		<div class="xq">T</div>
+		<div class="xq">E</div>
+		<div class="xq">R</div>
+		
+		<div class="x61 x161">S</div>
+		<div class="x61 x161">I</div>
+		<div class="x61 x161">X</div>
+		<div class="x161">T</div>
+		<div class="x161">E</div>
+		<div class="x161">E</div>
+		<div class="x161">N</div>
+		
+		<div class="x81 x181">E</div>
+		<div class="x81 x181">I</div>
+		<div class="x81 x181">G</div>
+		<div class="x81 x181">H</div>
+		<div class="x81 x181">T</div>
+		<div class="x181">E</div>
+		<div class="x181">E</div>
+		<div class="x181">N</div>
+		
+		<div class="x111">E</div>
+		<div class="x111">L</div>
+		<div class="x111">E</div>
+		<div class="x111">V</div>
+		<div class="x111">E</div>
+		<div class="x111">N</div>
+		
+		<div class="x121">T</div>
+		<div class="x121">W</div>
+		<div class="x121">E</div>
+		<div class="x121">L</div>
+		<div class="x121">V</div>
+		<div class="x121">E</div>
+		
+		<div class="x101">T</div>
+		<div class="x101">E</div>
+		<div class="x101">N</div>
+		
+		<div class="x71 x171">S</div>
+		<div class="x71 x171">E</div>
+		<div class="x71 x171">V</div>
+		<div class="x71 x171">E</div>
+		<div class="x71 x171">N</div>
+		<div class="x171">T</div>
+		<div class="x171">E</div>
+		<div class="x171">E</div>
+		<div class="x171">N</div>
+		
+		<div class="x401">F</div>
+		<div class="x401">O</div>
+		<div class="x401">U</div>
+		<div class="x401">R</div>
+		<div class="x401">T</div>
+		<div class="x401">Y</div>
+		
+		<div class="x91 x191">N</div>
+		<div class="x91 x191">I</div>
+		<div class="x91 x191">N</div>
+		<div class="x91 x191">E</div>
+		<div class="x191">T</div>
+		<div class="x191">E</div>
+		<div class="x191">E</div>
+		<div class="x191">N</div>
+		
+		<div class="x201">T</div>
+		<div class="x201">W</div>
+		<div class="x201">E</div>
+		<div class="x201">N</div>
+		<div class="x201">T</div>
+		<div class="x201">Y</div>
+		
+		<div>?</div>
+		
+		<div class="x301">T</div>
+		<div class="x301">H</div>
+		<div class="x301">I</div>
+		<div class="x301">R</div>
+		<div class="x301">T</div>
+		<div class="x301">Y</div>
+		
+		<div class="x501">F</div>
+		<div class="x501">I</div>
+		<div class="x501">F</div>
+		<div class="x501">T</div>
+		<div class="x501">Y</div>
+		
+		<div class="x42">F</div>
+		<div class="x42">O</div>
+		<div class="x42">U</div>
+		<div class="x42">R</div>
+		
+		<div class="x44 x402">F</div>
+		<div class="x44 x402">O</div>
+		<div class="x44 x402">U</div>
+		<div class="x44 x402">R</div>
+		<div class="x44 x402">T</div>
+		<div class="x44 x402">Y</div>
+		
+		<div>?</div>
+		
+		<div class="x22">T</div>
+		<div class="x22">W</div>
+		<div class="x22">O</div>
+		
+		<div class="x32">T</div>
+		<div class="x32">H</div>
+		<div class="x32">R</div>
+		<div class="x32">E</div>
+		<div class="x32">E</div>
+		
+		<div class="x62">S</div>
+		<div class="x62">I</div>
+		<div class="x62">X</div>
+		
+		<div class="x72">S</div>
+		<div class="x72">E</div>
+		<div class="x72">V</div>
+		<div class="x72">E</div>
+		<div class="x72">N</div>
+		
+		<div class="x12">O</div>
+		<div class="x12">N</div>
+		<div class="x12">E</div>
+		
+		<div class="x52">F</div>
+		<div class="x52">I</div>
+		<div class="x52">V</div>
+		<div class="x52">E</div>
+		
+		<div class="x92">N</div>
+		<div class="x92">I</div>
+		<div class="x92">N</div>
+		<div class="x92">E</div>
+		
+		<div class="x82">E</div>
+		<div class="x82">I</div>
+		<div class="x82">G</div>
+		<div class="x82">H</div>
+		<div class="x82">T</div>
+		
+		<div class="PAST">P</div>
+		<div class="PAST">A</div>
+		<div class="PAST">S</div>
+		<div class="PAST">T</div>
+		
+		<div class="TO">T</div>
+		<div class="TO">O</div>
+		
+		<div class="x1p">O</div>
+		<div class="x1p">N</div>
+		<div class="x1p">E</div>
+		
+		<div class="x2p">T</div>
+		<div class="x2p">W</div>
+		<div class="x2p">O</div>
+		
+		<div class="x4p">F</div>
+		<div class="x4p">O</div>
+		<div class="x4p">U</div>
+		<div class="x4p">R</div>
+		
+		<div class="x7p">S</div>
+		<div class="x7p">E</div>
+		<div class="x7p">V</div>
+		<div class="x7p">E</div>
+		<div class="x7p">N</div>
+		
+		<div class="x5p">F</div>
+		<div class="x5p">I</div>
+		<div class="x5p">V</div>
+		<div class="x5p">E</div>
+		
+		<div class="x6p">S</div>
+		<div class="x6p">I</div>
+		<div class="x6p">X</div>
+		
+		<div class="x8p">E</div>
+		<div class="x8p">I</div>
+		<div class="x8p">G</div>
+		<div class="x8p">H</div>
+		<div class="x8p">T</div>
+		
+		<div class="x10p">T</div>
+		<div class="x10p">E</div>
+		<div class="x10p">N</div>
+		
+		<div class="x9p">N</div>
+		<div class="x9p">I</div>
+		<div class="x9p">N</div>
+		
+		<div class="x9p x11p">E</div>
+		
+		<div class=" x11p">L</div>
+		<div class=" x11p">E</div>
+		<div class=" x11p">V</div>
+		<div class=" x11p">E</div>
+		<div class=" x11p">N</div>
+		
+		<div class=" x12p">T</div>
+		<div class=" x12p">W</div>
+		<div class=" x12p">E</div>
+		<div class=" x12p">L</div>
+		<div class=" x12p">V</div>
+		<div class=" x12p">E</div>
+		
+		<div class=" x3p">T</div>
+		<div class=" x3p">H</div>
+		<div class=" x3p">R</div>
+		<div class=" x3p">E</div>
+		<div class=" x3p">E</div>
+		
+		<div>?</div>
+		<div>?</div>
+		<div>?</div>
+		<div>?</div>	
+
+		<div class="OCLOCK">O</div>
+		<div class="OCLOCK">C</div>
+		<div class="OCLOCK">L</div>
+		<div class="OCLOCK">O</div>
+		<div class="OCLOCK">C</div>
+		<div class="OCLOCK">K</div>			
+	</div>
+	
+	<br />
+	<input type="number" id="d1" name="d1"> : <input type="number" id="d2" name="d2">
+	
+	<button type="button" onclick="lightUp()">Light Up</button>
+	<br />
+	<input type="text" id="phrase" name="phrase">
+	<p id="debug"></p>
+	</div>
+
+
+<script>
+	function lightUp(){
+	
+		if(mins!=-1){clear();}
+		var inputPhrase = document.getElementById('phrase').value;
+		document.getElementById("debug").innerHTML = inputPhrase;
+		
+		
+		
+		var hours = document.getElementById('d1').value;
+		var mins = document.getElementById('d2').value;
+		
+		if(mins == 0){
+			segLight("IT");
+			segLight("IS");
+			segLight("OCLOCK");
+			segLight("x"+hours+"1");
+		}
+		
+		else if(mins == 15 || mins == 45){
+			segLight("IT");
+			segLight("IS");
+			segLight("xq");
+			if(mins==15){
+				segLight("PAST");
+				segLight("x"+hours+"p");
+			}
+			if(mins==45){
+				segLight("TO");
+				segLight("x"+(parseInt(hours%12)+1)+"p");
+			}
+		}
+		else if(mins == 30){
+			segLight("IT");
+			segLight("IS");
+			segLight("x"+(parseInt(hours%12))+"1");
+			segLight("x301");
+		}
+		else if(mins < 30 && mins > 0){
+			segLight("IT");
+			segLight("IS");
+			segLight("PAST");
+			segLight("x"+mins+"1");
+			segLight("x"+hours+"p");
+			if (mins > 20){
+				segLight("x201");
+				segLight("x"+(parseInt(mins)-20).toString()+"2");
+			}
+		}
+		else if(mins > 30 && mins < 60){
+			segLight("IT");
+			segLight("IS");
+			segLight("TO");
+			segLight("x"+(parseInt(hours%12)+1)+"p");
+			var minsTo = 60 - parseInt(mins);
+			segLight("x"+minsTo.toString()+"1");
+			if (minsTo > 20){
+				segLight("x201");
+				segLight("x"+(parseInt(minsTo)-20).toString()+"2");
+			}			
+			
+		}
+		else{
+			segLight(inputPhrase);
+		}
+			
+		
+
+		
+		
+			
+	}
+	
+	function segLight(seg){
+		var clockWord = document.getElementsByClassName(seg);
+		for(var i = 0; i < clockWord.length ; i++){
+			clockWord[i].style.background = "red";
+		}
+	}
+	
+	function clear(){
+//		document.getElementById("debug").innerHTML = "clearing";
+		var allCells = document.getElementsByClassName('grid')[0].children;
+		for(var i = 0; i < allCells.length ; i++){
+			allCells[i].style.background = "white";
+		}
+	}
+	
+</script>
+
+</body>
+</html>
+
