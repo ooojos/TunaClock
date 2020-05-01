@@ -336,11 +336,12 @@
 
 <script>
 	function lightUp(){
-		clear();
+	
+		if(mins!=-1){clear();}
 		var inputPhrase = document.getElementById('phrase').value;
 		document.getElementById("debug").innerHTML = inputPhrase;
 		
-		segLight(inputPhrase);
+		
 		
 		var hours = document.getElementById('d1').value;
 		var mins = document.getElementById('d2').value;
@@ -371,7 +372,7 @@
 			segLight("x"+(parseInt(hours%12))+"1");
 			segLight("x301");
 		}
-		else if(mins < 30){
+		else if(mins < 30 && mins > 0){
 			segLight("IT");
 			segLight("IS");
 			segLight("PAST");
@@ -395,6 +396,9 @@
 			}			
 			
 		}
+		else{
+			segLight(inputPhrase);
+		}
 			
 		
 
@@ -411,7 +415,7 @@
 	}
 	
 	function clear(){
-		document.getElementById("debug").innerHTML = "clearing";
+//		document.getElementById("debug").innerHTML = "clearing";
 		var allCells = document.getElementsByClassName('grid')[0].children;
 		for(var i = 0; i < allCells.length ; i++){
 			allCells[i].style.background = "white";
